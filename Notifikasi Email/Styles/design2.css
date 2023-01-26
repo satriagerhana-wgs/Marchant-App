@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cccc;
+    font-family: D-DIN Exp;
+}
+
+.container{
+    width: 600px;
+    height: 1263px;
+    background-color: #ffff;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* header */
+.header{
+    display: flex;
+    margin: auto;
+}
+
+.header img{
+    width: 300px;
+    height: 58.63px;
+    margin: auto;
+}
+
+.greeting{
+    margin-top: 30px;
+}
+
+.greeting p{
+    text-align: center;
+    font-size: 35px;
+}
+/* header */
+
+/* Container Verifikasi */
+.container-verifikasi{
+    width: 560px;
+    height: 560px;
+    border-radius: 20px;
+    border: 1px solid #D4D8DD;
+    margin: 60px auto;
+    padding: 30px 20px;
+}
+.icon-verifikasi{
+    display: flex;
+    align-items: center;
+}
+
+.icon-verifikasi img{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-verifikasi p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.desc-verifikasi p{
+    font-size: 18px;
+    margin-top: 5px;
+    color: #636B78;
+}
+
+.line{
+    border: 1px solid #D4D8DD;
+    margin: 30px 0;
+}
+
+
+
+.title-pembayaran p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.desc-pembayaran{
+    display: flex;
+    margin: 15px 0;
+}
+
+.title-desc-pembayaran{
+    width: 213px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.title-desc-pembayaran p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #636B78;
+}
+
+.desc-pembayaran p:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    color: #636B78;
+}
+
+.payment{
+    display: flex;
+}
+
+.payment p{
+    margin-left: 5px;
+}
+
+.payment img{
+    width: 20px;
+    height: 20px;
+}
+
+.container-verifikasi .keterangan{
+    font-size: 18px;
+    color: #636B78;
+}
+
+.container-verifikasi .keterangan span{
+    font-weight: bold;
+}
+/* Container Verifikasi */
+
+
+/* Container Toko */
+.container-toko{
+    width: 560px;
+    height: 381px;
+    border: 1px solid #D4D8DD;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+.icon-toko{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-toko img{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-toko p{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.alamat{
+    width: 307px;
+}
+
+.btn-toko{
+    width: 235px;
+    height: 70px;
+    margin: auto;
+}
+button{
+    width: 235px;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid #0075FF;
+    background-color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0075FF;
+    cursor: pointer;
+}
+
+/* Container Toko */
+
+
+
