@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cccc;
+    font-family: D-DIN Exp;
+}
+
+.container{
+    width: 600px;
+    height: 1923px;
+    background-color: #E6F2FF;
+    margin: auto;
+}
+
+/* header */
+.header{
+    width: 600px;
+    height: 115px;
+    padding: 28px 20px;
+    background-image: url(../Assets/bg-header.svg);
+}
+
+.customer{
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.customer p{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title-header{
+    margin: 40px 23px;
+}
+
+.title-header p:nth-child(1){
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.title-header p:nth-child(2){
+    font-size: 18px;
+    color: #636B78;
+
+}
+
+.title-header p span{
+    font-weight: bold;
+}
+/* header */
+
+/* Container Reciept */
+.container-reciept{
+    width: 570px;
+    height: 1022px;
+    margin: auto;
+    padding: 40px 20px;
+    background-image: url(../Assets/bg-reciept.svg);
+}
+/* Start No Antria */
+.antrian{
+    width: 520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.antrian p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #636B78;
+}
+
+.no-antrian{
+    width: 75px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #D6E9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-antrian p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #636B78;
+}
+/* End No Antria */
+
+/* Start Pembayaran */
+.pembayaran{
+    width: 520px;
+    height: 616px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.pembayaran p{
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+/* Start Detail */
+.detail{
+    margin-top: 30px;
+}
+
+.title-pembayaran{
+    width: 520px;
+    margin-bottom: 20px;
+}
+
+.title-pembayaran-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-pembayaran-detail p:nth-child(1){
+    font-size: 18px;
+    color: #636B78;
+    font-weight: 100;
+}
+
+.title-pembayaran-detail p:nth-child(2){
+    font-size: 18px;
+    color: #636B78;
+    font-weight: bold;
+}
+/* End Detail */
+
+/* Start Item */
+.item{
+    margin-top: 40px;
+}
+
+.title-item{
+    width: 520px;
+    height: 45px;
+    background-color: #D6E9FF;
+    padding-left: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.title-item p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #080551;
+    margin: 13px 0;
+}
+
+.title-item p:nth-child(1){
+    margin-right: 52px;
+}
+
+.title-item p:nth-child(2){
+    width: 260px;
+    margin-right: 60px;
+    text-align: left;
+}
+
+.item-produk{
+    width: 479px;
+    height: 20px;
+    display: flex;
+    margin: 20px auto;
+}
+
+.item-produk p{
+    font-size: 18px;
+    color: #636B78;
+    font-weight: 100;
+}
+
+.item-produk p:nth-child(1){
+    margin-right: 68px;
+}
+
+.item-produk p:nth-child(2){
+    width: 260px;
+    height: auto;
+    margin-right: 60px;
+    text-align: left;
+
+}
+/* End Item */
+
+.line-dot{
+    width: 500px;
+    border: 2px dashed #ccc;
+    margin: 40px auto;
+}
+
+/* Start Detail Harga */
+.detail-harga{
+    width: 520px;
+    margin: auto;
+}
+
+.harga{
+    width: 491px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.harga p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #636B78;
+}
+
+.harga p:nth-child(2){
+    width: 85px;
+    text-align: left;
+}
+
+.harga-total{
+    width: 491px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.harga-total p{
+    font-size: 25px;
+    font-weight: bold;
+}
+/* End Detail Harga */
+
+/* End Pembayaran */
+
+/* Start QR */
+.qr-code{
+    width: 500px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+}
+
+.qr-code p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    color: #636B78;
+}
+
+.qr-code p span{
+    font-weight: bold;
+}
+/* End QR */
+/* Container Reciept */
+
+/* Start Detail Toko */
+.detail-toko{
+    width: 560px;
+    margin: 50px auto;
+}
+
+.detail-toko p:nth-child(1){
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.detail-toko p:nth-child(2){
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+    color: #636B78;
+    margin-top: 10px;
+}
+
+.detail-toko p span{
+    font-weight: bold;
+}
+/* End Detail Toko */
+
+
+/* Footer */
+
+footer{
+    width: 600px;
+    height: 291px;
+    background-color: #D6E9FF;
+    margin-top: 100px;
+}
+
+.service{
+    width: 524px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.us p:nth-child(1){
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #16479C;
+}
+
+.us p:nth-child(2){
+    font-size: 18px;
+    font-weight: 100;
+    color: #16479C;
+}
+
+.cs p:nth-child(1){
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #16479C;
+    text-align: right;
+}
+
+.cs .phone p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #16479C;
+    text-align: right;
+}
+
+.title-footer p{
+    font-size: 18px;
+    color: #16479C;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Footer */
