@@ -92,6 +92,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
+    width: 80%;
 }
 
 .data-customer .name p:nth-child(1){
