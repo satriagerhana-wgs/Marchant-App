@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempale Email Customer - Desain 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cccc;
+    font-family: D-DIN Exp;
+}
+
+.container{
+    width: 600px;
+    height: auto;
+    background-color: #E6F2FF;
+    margin: auto;
+}
+
+/* header */
+.header{
+    width: 600px;
+    height: 115px;
+    padding: 28px 20px;
+    background-image: url(../Assets/bg-header.svg);
+}
+
+.customer{
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.customer p{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title-header{
+    margin: 40px 23px;
+}
+
+.title-header p:nth-child(1){
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.title-header p:nth-child(2){
+    font-size: 18px;
+    color: #636B78;
+
+}
+
+.title-header p span{
+    font-weight: bold;
+}
+/* header */
+
+/* Container Reciept */
+.container-reciept{
+    width: 570px;
+    height: 948px;
+    margin: auto;
+    padding: 40px 20px;
+    background-image: url(../Assets/bg-reciept-2.svg);
+}
+/* Start No Antria */
+.antrian{
+    width: 520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.antrian p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #636B78;
+}
+
+.no-antrian{
+    width: 75px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #D6E9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-antrian p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #636B78;
+}
+/* End No Antria */
+
+/* Start Pembayaran */
+.pembayaran{
+    width: 520px;
+    height: 616px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.pembayaran p{
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+/* Start Detail */
+.detail{
+    margin-top: 30px;
+}
+
+.title-pembayaran{
+    width: 520px;
+    margin-bottom: 20px;
+}
+
+.title-pembayaran-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-pembayaran-detail p:nth-child(1){
+    font-size: 18px;
+    color: #636B78;
+    font-weight: 100;
+}
+
+.title-pembayaran-detail p:nth-child(2){
+    font-size: 18px;
+    color: #636B78;
+    font-weight: bold;
+}
+/* End Detail */
+
+/* Start Item */
+table{
+    width: 100%;
+    padding: 0 10px;
+}
+
+table th{
+    height: 45px;
+    background-color: #D6E9FF;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #080551;
+}
+
+.title-item th:nth-child(1){
+    text-align: center;
+    width: 40px;
+    padding: 10px;
+}
+
+.title-item th:nth-child(2){
+    padding-left: 45px;
+}
+
+.title-item th:nth-child(3){
+    padding-left: 20px;
+}
+
+table tr td{
+    padding: 10px;
+    font-size: 18px;
+    color: #636B78;
+    font-weight: 100;
+}
+
+.item-produk td:nth-child(1){
+    text-align: center;
+    width: 40px;
+}
+
+.item-produk td:nth-child(2){
+    width: 330px;
+    padding-left: 45px;
+}
+
+.item-produk td:nth-child(3){
+    padding-left: 20px;
+}
+
+
+/* End Item */
+
+.line-dot{
+    width: 500px;
+    border: 2px dashed #ccc;
+    margin: 40px auto;
+}
+
+/* Start Detail Harga */
+.detail-harga{
+    width: 520px;
+    margin: auto;
+}
+
+.harga{
+    width: 480px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.harga p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #636B78;
+}
+
+.harga p:nth-child(2){
+    width: 85px;
+    text-align: left;
+}
+
+.harga-total{
+    width: 480px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.harga-total p{
+    font-size: 25px;
+    font-weight: bold;
+}
+/* End Detail Harga */
+
+/* End Pembayaran */
+
+/* Start Receipt */
+.receipt{
+    width: 520px;
+    height: 70px;
+    margin: 75px auto 0 auto;
+}
+
+.detail-receipt{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.detail-receipt p{
+    font-size: 18px;
+    color: #636B78;
+}
+
+.detail-receipt a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #16479C;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* End Receipt */
+/* Container Reciept */
+
+/* Start Detail Toko */
+.detail-toko{
+    width: 560px;
+    height: 444px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 35px 15px;
+    margin: 50px auto;
+}
+
+.header-toko{
+    display: flex;
+    align-items: center;
+}
+
+.header-toko p{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.list-data-toko{
+    margin: 20px 0;
+}
+
+.data-toko{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.data-toko p:nth-child(1){
+    font-size: 18px;
+    font-weight: 100;
+    color: #636B78;
+}
+
+.data-toko p:nth-child(2){
+    font-size: 18px;
+    width: 300px;
+    font-weight: bold;
+    color: #636B78;
+    text-align: right;
+}
+
+.line{
+    width: 520px;
+    margin: auto;
+    border: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+.btn-toko{
+    width: 250px;
+    height: 85px;
+    margin: auto;
+}
+
+.btn-toko button{
+    width: 250px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #16479C;
+    font-size: 24px;
+    color: #16479C;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px 0px #0000000F;
+
+}
+
+
+
+/* End Detail Toko */
+
+
+/* Footer */
+
+footer{
+    width: 600px;
+    height: 291px;
+    background-color: #D6E9FF;
+    margin-top: 100px;
+}
+
+.service{
+    width: 524px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.us p:nth-child(1){
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #16479C;
+}
+
+.us p:nth-child(2){
+    font-size: 18px;
+    font-weight: 100;
+    color: #16479C;
+}
+
+.cs p:nth-child(1){
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #16479C;
+    text-align: right;
+}
+
+.cs .phone p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #16479C;
+    text-align: right;
+}
+
+.title-footer p{
+    font-size: 18px;
+    color: #16479C;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-footer p span{
+    font-weight: bold;
+}
+
+.line-2{
+    width: 500px;
+    margin: auto;
+    border: 1px solid #16479C;
+    margin-bottom: 30px;
+}
+/* Footer */
+    </style>
+</head>
+<body>
+    <div class="container">
+         <!-- header -->
+         <div class="header">
+            <img src="../Assets/hellobisnisnewlogo.png" alt="">
+        </div>
+
+        <div class="customer">
+            <p>Hello, Handoko Prasetyo</p>
+           
+        </div>
+
+        <div class="title-header">
+            <p>Verifikasi Pembayaran</p>
+            <p>Pembayaran telah terverifikasi dan pesanan telah diteruskan ke <span>Penjual</span></p>
+        </div>
+        <!-- header -->
+
+        <!-- Container Reciept  -->
+        <div class="container-reciept">
+            <!-- Start No Antrian -->
+            <div class="antrian">
+                <p>Nomor Antrian</p>
+                <div class="no-antrian">
+                    <p>123</p>
+                </div>
+            </div>
+            <!-- End No Antrian -->
+
+            <!-- Start Pembayaran -->
+            <div class="pembayaran">
+                <p>Detail Pembayaran</p>
+
+                <!-- Start Detail -->
+                <div class="detail">
+                    <div class="title-pembayaran">
+                        <div class="title-pembayaran-detail">
+                            <p>No. Trx</p>
+                            <p>SBX23012400109</p>
+                        </div>
+                    </div>
+                    <div class="title-pembayaran">
+                        <div class="title-pembayaran-detail">
+                            <p>Waktu Pembayaran</p>
+                            <p>24 Januari 2023 / 11 : 09 : 56</p>
+                        </div>
+                    </div>
+                    <div class="title-pembayaran">
+                        <div class="title-pembayaran-detail">
+                            <p>Tipe Pesanan</p>
+                            <p>TAKEAWAY</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Detail -->
+
+                <!-- Start Item -->
+                <table class="item" cellspacing="0" cellpadding="0">
+                    <tr class="title-item">
+                        <th>QTY</th>
+                        <th>Item</th>
+                        <th>Harga</th>
+                    </tr>
+
+                    <tr class="item-produk">
+                        <td>1</td>
+                        <td>Coca - cola 250ml</td>
+                        <td>Rp. 3.000</p>
+                    </tr>
+                    <tr class="item-produk">
+                        <td>1</td>
+                        <td>Keripik Kaca Pedas 300gr</td>
+                        <td>Rp. 17.000</td>
+                    </tr>
+                    <tr class="item-produk">
+                        <td>1</td>
+                        <td>Cadbury Coklat Cashew Whole Nut Regular 90g</td>
+                        <td>Rp. 30.000</td>
+                    </tr>
+                </table>
+                <!-- End Item -->
+
+                <div class="line-dot"></div>
+
+                <!-- Start Detail Harga -->
+                <div class="detail-harga">
+                    <div class="harga">
+                        <p>Sub Total</p>
+                        <p>Rp. 50.000</p>
+                    </div>
+                    <div class="harga">
+                        <p>Pajak (12.5%)</p>
+                        <p>Rp. 1.875</p>
+                    </div>
+                    <div class="harga">
+                        <p>Services (10%)</p>
+                        <p>Rp. 0</p>
+                    </div>
+                    <div class="harga">
+                        <p>Biaya Layanan</p>
+                        <p>Rp. 1.500</p>
+                    </div>
+                    <div class="harga-total">
+                        <p>Total</p>
+                        <p>Rp. 53.375</p>
+                    </div>
+                </div>
+                <!-- End Detail Harga -->
+
+            </div>
+            <!-- End Pembayaran -->
+
+            <!-- Start Receipt -->
+            <div class="receipt">
+               <div class="detail-receipt">
+                    <p>Cek Pesanan</p>
+                    <a href="#">Lihat Pesanan</a>
+               </div>
+               <div class="detail-receipt">
+                    <p>Download Reciept Pembayaran</p>
+                    <a href="#">
+                        <img src="../Assets/icon-attached.svg" alt="">
+                        Reciept Attached
+                    </a>
+               </div>
+            </div>
+            <!-- End Receipt -->
+        </div>
+        <!-- Container Reciept  -->
+
+        <!-- Start Detail Toko -->
+        <div class="detail-toko">
+            <div class="header-toko">
+                <img src="../Assets/toko.svg" alt="">
+                <p>Detail Toko</p>
+            </div>
+            <div class="list-data-toko">
+                <div class="data-toko">
+                    <p>Nama Toko</p>
+                    <p>Home Center Store Berkah</p>
+                </div>
+
+                <div class="data-toko">
+                    <p>Nomor Telepon</p>
+                    <p>082345678901</p>
+                </div>
+
+                <div class="data-toko">
+                    <p>Alamat Toko</p>
+                    <p>Jl. Kopo Bihbul No.136, Margahayu Sel., Kec. Margahayu, Kabupaten Bandung, Jawa Barat 40226</p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="btn-toko">
+                <button>Lihat Toko</button>
+            </div>
+        </div>
+        <!-- End Detail Toko -->
+        
+        <!-- Footer -->
+        <footer>
+            <div class="service">
+                <div class="us">
+                    <p>Kunjungi Kami</p>
+                    <p>www.sandbox.com</p>
+                </div>
+                <div class="cs">
+                    <p>Customer Services</p>
+                    <div class="phone">
+                        <p>021 - 23452345</p>
+                        <p>082323456789</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line-2"></div>
+            <div class="title-footer">
+                <p>Email ini di buat Otomatis, jika anda membutuhkan bantuan silahkan hubungi <span>Customer Service.</span> </p>
+                <p>2023 Hello<span>Bisnis</span>.com | All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+</html>
