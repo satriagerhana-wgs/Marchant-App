@@ -141,60 +141,56 @@ body{
 /* End Detail */
 
 /* Start Item */
-.item{
-    margin-top: 40px;
+table{
+    width: 100%;
+    padding: 0 10px;
 }
 
-.title-item{
-    width: 520px;
+table th{
     height: 45px;
     background-color: #D6E9FF;
-    padding-left: 10px;
-    display: flex;
-    text-align: center;
-}
-
-.title-item p{
+    text-align: left;
     font-size: 18px;
     font-weight: bold;
     color: #080551;
-    margin: 13px 0;
 }
 
-.title-item p:nth-child(1){
-    margin-right: 52px;
+.title-item th:nth-child(1){
+    text-align: center;
+    width: 40px;
+    padding: 10px;
 }
 
-.title-item p:nth-child(2){
-    width: 260px;
-    margin-right: 60px;
-    text-align: left;
+.title-item th:nth-child(2){
+    padding-left: 45px;
 }
 
-.item-produk{
-    width: 479px;
-    height: 20px;
-    display: flex;
-    margin: 20px auto;
+.title-item th:nth-child(3){
+    padding-left: 20px;
 }
 
-.item-produk p{
+table tr td{
+    padding: 10px;
     font-size: 18px;
     color: #636B78;
     font-weight: 100;
 }
 
-.item-produk p:nth-child(1){
-    margin-right: 68px;
+.item-produk td:nth-child(1){
+    text-align: center;
+    width: 40px;
 }
 
-.item-produk p:nth-child(2){
-    width: 260px;
-    height: auto;
-    margin-right: 60px;
-    text-align: left;
-
+.item-produk td:nth-child(2){
+    width: 330px;
+    padding-left: 45px;
 }
+
+.item-produk td:nth-child(3){
+    padding-left: 20px;
+}
+
+
 /* End Item */
 
 .line-dot{
@@ -210,7 +206,7 @@ body{
 }
 
 .harga{
-    width: 491px;
+    width: 480px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -229,10 +225,11 @@ body{
 }
 
 .harga-total{
-    width: 491px;
+    width: 480px;
     display: flex;
     margin: auto;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .harga-total p{
@@ -341,6 +338,10 @@ footer{
     color: #16479C;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.title-footer p span{
+    font-weight: bold;
 }
 
 .line-2{
