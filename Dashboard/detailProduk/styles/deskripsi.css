@@ -1,0 +1,156 @@
+@import url('https://fonts.cdnfonts.com/css/d-din');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'D-DIN Exp', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 623px;
+    padding: 40px 25px;
+}
+
+/* start title  */
+.title{
+    margin-bottom: 20px;
+}
+.title p{
+    font-size: 22px;
+    font-weight: bold;
+}
+/* end title  */
+
+/* Start Menu */
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu a{
+    color: #A0A0A0;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.nav-menu a:nth-child(3){
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    /* border-bottom: 2px solid #000; */
+    color: #000;
+}
+
+.button button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #E7EBEF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px 0px #0000000F;
+    box-shadow: 0px 0px 4px 0px #0000000A;
+    font-size: 14px;
+    color: #838383;
+}
+
+.line-menu{
+    width: 100%;
+    border: 1px solid #BABABA;
+    margin-top: 10px;
+}
+/* End Menu */
+
+
+
+/* start section kategori */
+form{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.input label{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.input input{
+    width: 97vw;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #F1F1F1;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.input textarea{
+    border: #BABABA;
+    background-color: #F1F1F1;
+    border-radius: 4px;
+    padding: 20px;
+    outline: none;
+}
+/* end section kategori */
+
+
+/* start button */
+.section-button{
+    margin-top: 100px;
+}
+.line-button{
+    width: 100%;
+    border: 1px solid #D1D4D6;
+    margin-bottom: 25px;
+}
+
+.button-act{
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+
+.button-act button{
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px 0px #0000000F;
+    box-shadow: 0px 0px 4px 0px #0000000A;
+
+}
+
+.button-act button:nth-child(1){
+    background-color: #FF4343;
+}
+.button-act button:nth-child(2){
+    background-color: #0075FF;
+}
+/* end button */

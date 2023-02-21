@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchant Dashboard - Detail Produk</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/detail.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+     <!-- START CONTAINER -->
+     <div class="container">
+
+          <!-- start Title -->
+          <div class="title">
+            <p>Detail Produk</p>
+        </div>
+        <!-- end Title -->
+
+         <!-- Start Menu -->
+         <div class="menu">
+            <div class="nav-menu">
+                <a href="namaKategori.html">Nama & Kategori</a>
+                <a href="detail.html">Detail</a>
+                <a href="deskripsi.html">Deskripsi</a>
+            </div>
+            <div class="button">
+                <button id="editBtn">Edit</button>
+                <!-- <button name="btnEdit11"id="btnXyz2" class="btn11">Edit</button> -->
+            </div>
+        </div>
+        <div class="line-menu"></div>
+        <!-- End Menu -->
+
+        <!-- start section kategori -->
+        <form>
+            <div class="field-section">
+                <div class="field-br1">
+                    <div class="input">
+                        <label for="">Tipe Produk *</label>
+                        <input type="text" placeholder="Main" readonly="true" class="readOnly">
+                    </div>
+
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="field-br1">
+                    <div class="input">
+                        <label for="">Tipe Diskon *</label>
+                        <select id="diskon" name="diskon" disabled="true" class="readOnly">
+                            <option value="persentase">Persentase</option>
+                            <option value="Potongan Harga">Potongan Harga</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="">Tipe Produk *</label>
+                        <input type="text" placeholder="Main" readonly="true" class="readOnly">
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-section">
+                <div class="input">
+                    <label for="">Kategori *</label>
+                    <input type="text" placeholder="Meals" readonly="true" class="readOnly">
+                </div>
+                <div class="input">
+                    <label for="">Kategori *</label>
+                    <input type="text" placeholder="Meals" readonly="true" class="readOnly">
+                </div>
+            </div>
+
+            <div class="field-img">
+                <label for="">Kategori *</label>
+                <div class="section-img">
+                    <div class="img satu">
+                        <div class="gradasi">
+                           <div class="set">
+                                <input type="checkbox">
+                                <p>Set Foto Utama</p>
+                           </div>
+                           <div class="delete">
+                                <div class="line-del"></div>
+                                <button>
+                                    <img src="assets/delete-icon.svg" alt="">
+                                </button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="img dua">
+                        <div class="gradasi">
+                            <div class="set">
+                                 <input type="checkbox">
+                                 <p>Set Foto Utama</p>
+                            </div>
+                            <div class="delete">
+                                 <div class="line-del"></div>
+                                 <button>
+                                     <img src="assets/delete-icon.svg" alt="">
+                                 </button>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="img tiga">
+                        <div class="gradasi">
+                            <div class="set">
+                                 <input type="checkbox">
+                                 <p>Set Foto Utama</p>
+                            </div>
+                            <div class="delete">
+                                 <div class="line-del"></div>
+                                 <button>
+                                     <img src="assets/delete-icon.svg" alt="">
+                                 </button>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="img empat">
+                        <div class="gradasi">
+                            <div class="set">
+                                 <input type="checkbox">
+                                 <p>Set Foto Utama</p>
+                            </div>
+                            <div class="delete">
+                                 <div class="line-del"></div>
+                                 <button>
+                                     <img src="assets/delete-icon.svg" alt="">
+                                 </button>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <!-- end section kategori -->
+
+        <!-- start button  -->
+        <div class="section-button">
+            <div class="line-button"></div>
+            <div class="button-act">
+                <button onclick="kembali()">Kembali</button>
+                <button onclick="selanjutnya()">Selanjutnya</button>
+            </div>
+        </div>
+        <!-- End button  -->
+
+     </div>
+     <!-- END CONTAINER -->
+
+
+     <script>
+        // Edit Form
+        $("#editBtn").on('click', function(){
+            $('.readOnly').attr('readonly', false);
+            $('#diskon').attr('disabled', false);
+            $('.gradasi').show();
+            $('.gradasi').css({'display' : 'flex', 'justify-content' : 'space-between'});
+            $('.readOnly').css({ 'border': '1px solid #A1A6AD', 'background-color': 'white' });
+        });
+    
+        // Redirect
+        function selanjutnya() {
+            window.location.href = '../detailProduk/deskripsi.html';
+        }
+        function kembali() {
+            window.location.href = '../detailProduk/namaKategori.html';
+        }
+
+        </script>
+</body>
+</html>
