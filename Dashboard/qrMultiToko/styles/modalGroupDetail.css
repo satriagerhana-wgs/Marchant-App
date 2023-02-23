@@ -1,0 +1,340 @@
+
+.modal2 {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 150px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content2 {
+    width: 30%;
+    height: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.icon-confrm{
+    display: flex;
+    justify-content: center;
+}
+
+.title-confrm{
+    margin-top: 25px;
+}
+
+.title-confrm p:nth-child(1){
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #516377;
+}
+
+
+.title-confrm p:nth-child(2){
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    color: #516377;
+    margin-top: 5px;
+}
+
+/* start button */
+.btn-modal-confrm{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+}
+
+.btn-modal-confrm button{
+    width: 45%;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn-modal-confrm button:nth-child(1){
+    background-color: #0075FF;
+    margin-bottom: 10px;
+}
+.btn-modal-confrm button:nth-child(2){
+    background-color: #FF2622;
+    margin-left: 20px;
+}
+
+/* Start Header */
+.header-modal{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.line-modal{
+    width: 100%;
+    height: 1;
+    border: 1px solid #ccc;
+    margin: 25px auto;
+}
+
+
+.title-header-modal{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30%;
+}
+
+.title-header-modal p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.closeEdit {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeEdit:hover,
+.closeEdit:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* End Header */
+
+/* Start form */
+.editForm{
+    width: 100%;
+    height: auto;
+}
+
+.input-toko-edit{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-toko-edit label{
+    font-size: 18px;
+    color: #636B78;
+    font-weight: bold;
+}
+
+.input-toko-edit input{
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+.input-point{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.input-point .lat-long{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lat-long label{
+    font-size: 18px;
+    color: #636B78;
+    font-weight: bold;
+}
+
+.lat-long input{
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ECECEC;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+/* End form  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Modal */
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 20px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    width: 50%;
+    height: 95%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Start Header */
+.header-modal{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.line-modal{
+    width: 100%;
+    height: 1;
+    border: 1px solid #ccc;
+    margin: 25px auto;
+}
+
+
+.title-header-modal{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30%;
+}
+
+.title-header-modal p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* End Header */
+
+/* Start List Toko */
+form{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+form::-webkit-scrollbar{
+    width: 0;
+}
+
+.add-toko{
+    margin-bottom: 15px;
+}
+
+.list-toko{
+    height: 350px;
+}
+
+.input-toko{
+    display: flex;
+    align-items: center;
+}
+
+.input-toko input{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.nama-toko p:nth-child(1){
+    font-size: 18px;
+    font-weight: bold;
+    color: #636B78;
+    margin-bottom: 2px;
+}
+.nama-toko p:nth-child(2){
+    font-size: 16px;
+    color: #A1A6AD;
+}
+
+.line-toko{
+    border: 1px solid #f1f1f1;
+    margin-top: 10px;
+}
+/* End List Toko */
+
+/* start button */
+.btn-modal{
+    width: 100%;
+    margin-top: 35px;
+}
+
+.btn-modal button{
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn-modal button:nth-child(1){
+    background-color: #0075FF;
+    margin-bottom: 10px;
+}
+.btn-modal button:nth-child(2){
+    background-color: #FF2622;
+}
+/* end button */
+
+
+
+/* End Modal */

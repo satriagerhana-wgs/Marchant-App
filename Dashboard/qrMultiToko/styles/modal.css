@@ -1,0 +1,153 @@
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 20px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    width: 50%;
+    height: 95%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Start Header */
+.header-modal{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.line-modal{
+    width: 100%;
+    height: 1;
+    border: 1px solid #ccc;
+    margin: 25px auto;
+}
+
+
+.title-header-modal{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30%;
+}
+
+.title-header-modal p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* End Header */
+
+/* Start form */
+form{
+    width: 100%;
+    height: auto;
+}
+
+.input-toko{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-toko label{
+    font-size: 18px;
+    color: #636B78;
+    font-weight: bold;
+}
+
+.input-toko input{
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+.input-point{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.input-point .lat-long{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lat-long label{
+    font-size: 18px;
+    color: #636B78;
+    font-weight: bold;
+}
+
+.lat-long input{
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ECECEC;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+/* End form  */
+
+/* start button */
+.btn-modal{
+    width: 100%;
+    margin-top: 35px;
+}
+
+.btn-modal button{
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn-modal button:nth-child(1){
+    background-color: #0075FF;
+    margin-bottom: 10px;
+}
+.btn-modal button:nth-child(2){
+    background-color: #FF2622;
+}
+/* end button */
+
+

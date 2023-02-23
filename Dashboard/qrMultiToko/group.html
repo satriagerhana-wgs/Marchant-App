@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR Multi Toko</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/group.css">
+</head>
+<body>
+    <!-- START CONTAINER -->
+    <div class="container">
+        
+        <!-- start header -->
+        <div class="header">
+            <div class="title-header">
+                <p>Cloud Kitchen Kantin WGS</p>
+            </div>
+
+            <div class="search-header">
+                <button type="submit">
+                    <img src="assets/icon/search.svg" alt="">
+                </button>
+                <input type="text" placeholder="Cari toko disini..." name="search">
+            </div>
+        </div>
+        <!-- end header -->
+
+          <!-- Start Menu -->
+          <div class="menu">
+            <div class="nav-menu">
+                <a href="index.html">Daftar Toko</a>
+                <a href="group.html">Group</a>
+            </div>
+            <div class="button">
+                <button onclick="tambahGroup()">Tambah Group</button>
+            </div>
+        </div>
+        <div class="line-menu"></div>
+        <!-- End Menu -->
+
+        <!-- start table -->
+        <div class="section-table">
+            <table>
+                <tr>
+                    <th>Nama Group</th>
+                    <th>Kode Group</th>
+                    <th>Jumlah Toko</th>
+                    <th>Aksi</th>
+                </tr>
+                <tr>
+                    <td>Food Court</td>
+                    <td>zXPloxLj</td>
+                    <td>20</td>
+                    <td>
+                        <button onclick="detailGroup()"><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                        <button onclick="editGroup()"><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                        <button  id="btnDownload"><img class="icon" src="assets/icon/download.svg" alt=""></button>
+                        <button id="btnHapus"><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>UMKM Jakarta</td>
+                    <td>zXPloxLj</td>
+                    <td>30</td>
+                    <td>
+                        <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/download.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>UMKM Bandung</td>
+                    <td>zXPloxLj</td>
+                    <td>40</td>
+                    <td>
+                        <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/download.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- end table -->
+
+    </div>
+    <!-- END CONTAINER -->
+
+         <!-- Start Modal Notifikasi Download-->
+         <div id="ModalDownload" class="modal2">
+        
+            <!-- Start Modal content -->
+            <div class="modal-content2">
+                <div class="icon-confrm">
+                    <img src="assets/icon/checklist.svg" alt="">
+                </div>
+    
+                <div class="title-confrm">
+                    <p>Download QR</p>
+                    <p>QR Code Berhasil di Download</p>
+                </div>
+    
+                <div class="btn-modal-confrm">
+                    <button id="btnDownloadOK">OK</button>
+                </div>
+    
+                
+            </div>
+            <!-- End Modal content -->
+    
+        </div>
+        <!-- End Modal Notifikasi Download -->
+
+
+        <!-- Start Modal Hapus -->
+        <div id="ModalHapus" class="modal2">
+    
+            <!-- Start Modal content -->
+            <div class="modal-content2">
+                <div class="icon-confrm">
+                    <img src="assets/icon/check.svg" alt="">
+                </div>
+
+                <div class="title-confrm">
+                    <p>Hapus Data</p>
+                    <p>Apakah data ini akan di hapus.?</p>
+                </div>
+
+                <div class="btn-modal-confrm">
+                    <button id="btnHapusConfrim">Ya</button>
+                    <button id="btnHapusBatal">Batal</button>
+                </div>
+            </div>
+            <!-- End Modal content -->
+    
+        </div>
+        <!-- End Modal Hapus-->
+
+        <!-- Start Modal Konfirmas Hapus-->
+        <div id="ModalHapusConfirm" class="modal2">
+            
+            <!-- Start Modal content -->
+            <div class="modal-content2">
+                <div class="icon-confrm">
+                    <img src="assets/icon/checklist.svg" alt="">
+                </div>
+
+                <div class="title-confrm">
+                    <p>Hapus</p>
+                    <p>Data berhasil di hapus</p>
+                </div>
+
+                <div class="btn-modal-confrm">
+                    <button id="btnHapusOK">OK</button>
+                </div>
+
+                
+            </div>
+            <!-- End Modal content -->
+
+        </div>
+        <!-- End Modal Konfirmas Hapus -->
+
+<script src="scripts/modalGroup.js"></script>
+</body>
+</html>

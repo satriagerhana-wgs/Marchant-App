@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR Multi Toko</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/groupEdit.css">
+    <link rel="stylesheet" href="styles/modalGroupDetail.css">
+</head>
+<body>
+    <!-- START CONTAINER -->
+    <div class="container">
+        
+        <!-- start header -->
+        <div class="header">
+            <div class="title-header">
+                <p>Cloud Kitchen Kantin WGS</p>
+            </div>
+
+            <div class="search-header">
+                <button type="submit">
+                    <img src="assets/icon/search.svg" alt="">
+                </button>
+                <input type="text" placeholder="Cari toko disini..." name="search">
+            </div>
+        </div>
+        <!-- end header -->
+
+          <!-- Start Menu -->
+          <div class="menu">
+            <div class="nav-menu">
+                <a href="index.html">Daftar Toko</a>
+                <a href="detail.html">Group</a>
+            </div>
+        </div>
+        <div class="line-menu"></div>
+        <!-- End Menu -->
+
+       
+        <div class="section">
+
+            <div class="scan">
+                <div class="title-scan">
+                    <p>QR Code</p>
+                    <p>UMKM Bandung</p>
+                </div>
+
+                <div class="qr">
+                    <img src="assets/icon/QR.svg" alt="">
+                </div>
+
+                <div class="btn-download-qr">
+                    <button>
+                        <img src="assets/icon/download.svg" alt="">
+                        Download QR Code
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="table">
+                <!-- Start Group -->
+                <div class="group">
+                    <div class="group-name">
+                        <label for="">Nama Group *</label>
+                        <input type="text" placeholder="UMKM Bandung">
+                    </div>
+                    <div class="group-add">
+                        <button id="btnTambahToko"> 
+                            <img src="assets/icon/add.svg" alt="">
+                            Tambah Toko
+                        </button>
+                    </div>
+                </div>
+                <!-- End Group -->
+                
+                <table>
+                    <tr>
+                        <th>Nama Toko</th>
+                        <th>Alamat</th>
+                        <th>No Telepon</th>
+                        <th>Aksi</th>
+                    </tr>
+                    <tr>
+                        <td>Cafe Djawa</td>
+                        <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                        <td>082234567890</td>
+                        <td>
+                            <button id="btnDetail"><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                            <button id="btnEdit"><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                            <button id="btnHapus"><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Kitchen Kanti WGS</td>
+                        <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                        <td>082234567890</td>
+                        <td>
+                            <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                            <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                            <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cafe Baru</td>
+                        <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                        <td>082234567890</td>
+                        <td>
+                            <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                            <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                            <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+            </div>
+        </div>
+        <!-- end section -->
+
+         <!-- start button  -->
+         <div class="section-button">
+            <div class="line-button"></div>
+            <div class="button-act">
+                <button onclick="kembali()">Kembali</button>
+                <button id="btnSimpan">Simpan</button>
+            </div>
+        </div>
+        <!-- End button  -->
+
+
+    </div>
+    <!-- END CONTAINER -->
+
+
+    <!-- Start Modal -->
+    <div id="myModal" class="modal">
+        
+        <!-- Start Modal content -->
+        <div class="modal-content">
+            <!-- start Header -->
+            <div class="header-modal">
+                <div class="title-header-modal">
+                    <p>Daftar Toko</p> 
+                    <span class="close">&times;</span>
+                </div>
+                <div class="line-modal"></div>
+            </div>
+            <!-- end Header -->
+
+            <!-- Start form -->
+            <form action="">
+               <div class="list-toko">
+                    <div class="add-toko">
+                        <div class="input-toko">
+                            <input type="checkbox">
+                            <div class="nama-toko">
+                                <p>Cafe Djawa</p>
+                                <p>Jalan Astana Anyar - Bandung</p>
+                            </div>
+                        </div>
+                        <div class="line-toko"></div>
+                    </div>
+                    <div class="add-toko">
+                        <div class="input-toko">
+                            <input type="checkbox">
+                            <div class="nama-toko">
+                                <p>Cloud Kitchen Kanti WGS</p>
+                                <p>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</p>
+                            </div>
+                        </div>
+                        <div class="line-toko"></div>
+                    </div>
+                    <div class="add-toko">
+                        <div class="input-toko">
+                            <input type="checkbox">
+                            <div class="nama-toko">
+                                <p>Cafe Kopi Baru</p>
+                                <p>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</p>
+                            </div>
+                        </div>
+                        <div class="line-toko"></div>
+                    </div>
+                    <div class="add-toko">
+                        <div class="input-toko">
+                            <input type="checkbox">
+                            <div class="nama-toko">
+                                <p>Kantin Bebek Bakar</p>
+                                <p>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</p>
+                            </div>
+                        </div>
+                        <div class="line-toko"></div>
+                    </div>
+                    <div class="add-toko">
+                        <div class="input-toko">
+                            <input type="checkbox">
+                            <div class="nama-toko">
+                                <p>Kantin Bebek Bakar</p>
+                                <p>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</p>
+                            </div>
+                        </div>
+                        <div class="line-toko"></div>
+                    </div>
+                    <div class="add-toko">
+                        <div class="input-toko">
+                            <input type="checkbox">
+                            <div class="nama-toko">
+                                <p>Kantin Bebek Bakar</p>
+                                <p>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</p>
+                            </div>
+                        </div>
+                        <div class="line-toko"></div>
+                    </div>
+                    <div class="add-toko">
+                        <div class="input-toko">
+                            <input type="checkbox">
+                            <div class="nama-toko">
+                                <p>Kantin Bebek Bakar</p>
+                                <p>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</p>
+                            </div>
+                        </div>
+                        <div class="line-toko"></div>
+                    </div>
+               </div>
+            </form>
+            <!-- end form -->
+
+            <!-- start button -->
+            <div class="btn-modal">
+                <button id="btnSimpan">Simpan</button>
+                <button>Batal</button>
+            </div>
+            <!-- end button -->
+
+        </div>
+        <!-- End Modal content -->
+  
+    </div>
+    <!-- End Modal -->
+
+
+    <!-- Start Modal Berhasil Disimpan -->
+    <div id="myModalBerhasil" class="modal2">
+    
+        <!-- Start Modal content -->
+        <div class="modal-content2">
+            <div class="icon-confrm">
+                <img src="assets/icon/checklist.svg" alt="">
+            </div>
+
+            <div class="title-confrm">
+                <p>Simpan</p>
+                <p>Data Berhasil di simpan</p>
+            </div>
+
+            <div class="btn-modal-confrm">
+                <button id="btnConfrmOkSimpan">OK</button>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Berhasil Disimpan -->
+
+
+     <!-- Start Modal Edit -->
+     <div id="ModalEdit" class="modal">
+        
+        <!-- Start Modal content -->
+        <div class="modal-content">
+            <!-- start Header -->
+            <div class="header-modal">
+                <div class="title-header-modal">
+                    <p>Setting Alamat Toko</p> 
+                    <span class="closeEdit">&times;</span>
+                </div>
+                <div class="line-modal"></div>
+            </div>
+            <!-- end Header -->
+
+            <!-- Start form -->
+            <form >
+                <div class="input-toko-edit">
+                    <label for="">Alamat Toko *</label>
+                    <input type="text" placeholder="Jalan Kopo Bihbul No 306, Margahayu Sel., Kec. Margahayu, Kabu...">
+                </div>
+                <div class="input-toko-edit">
+                    <label for="">Nomor Telepon *</label>
+                    <input type="text" placeholder="082234567890">
+                </div>
+                <div class="input-toko-edit">
+                    <label for="">Alamat Toko *</label>
+                    <input type="text" placeholder="https://www.google.co.id/maps/place/Kec.+Astanaanyar,+Kota......">
+                </div>
+                <div class="input-point">
+                    <div class="lat-long">
+                        <label for="">Latitude</label>
+                        <input type="text" placeholder="https://www.google.co.id/maps/place/Kec.+Astanaanyar,+Kota......" readonly>
+                    </div>
+                    <div class="lat-long">
+                        <label for="">Longtitude</label>
+                        <input type="text" placeholder="https://www.google.co.id/maps/place/Kec.+Astanaanyar,+Kota......" readonly>
+                    </div>
+                </div>
+            </form>
+            <!-- end form -->
+
+            <!-- start button -->
+            <div class="btn-modal">
+                <button id="btnSimpanEdit">Simpan</button>
+                <button>Batal</button>
+            </div>
+            <!-- end button -->
+
+        </div>
+        <!-- End Modal content -->
+  
+    </div>
+    <!-- End Modal Edit -->
+
+
+    <!-- Start Modal Hapus -->
+    <div id="ModalHapus" class="modal2">
+    
+        <!-- Start Modal content -->
+        <div class="modal-content2">
+            <div class="icon-confrm">
+                <img src="assets/icon/check.svg" alt="">
+            </div>
+
+            <div class="title-confrm">
+                <p>Hapus Data</p>
+                <p>Apakah data ini akan di hapus.?</p>
+            </div>
+
+            <div class="btn-modal-confrm">
+                <button id="btnHapusConfrim">Ya</button>
+                <button id="btnHapusBatal">Batal</button>
+            </div>
+        </div>
+        <!-- End Modal content -->
+
+    </div>
+    <!-- End Modal Hapus-->
+
+    <!-- Start Modal Konfirmas Hapus-->
+    <div id="ModalHapusConfirm" class="modal2">
+        
+        <!-- Start Modal content -->
+        <div class="modal-content2">
+            <div class="icon-confrm">
+                <img src="assets/icon/checklist.svg" alt="">
+            </div>
+
+            <div class="title-confrm">
+                <p>Hapus</p>
+                <p>Data berhasil di hapus</p>
+            </div>
+
+            <div class="btn-modal-confrm">
+                <button id="btnHapusOK">OK</button>
+            </div>
+
+            
+        </div>
+        <!-- End Modal content -->
+
+    </div>
+    <!-- End Modal Konfirmas Hapus -->
+
+    <script>
+        // redirect
+          function kembali() {
+            window.location.href = '../qrMultiToko/group.html';
+        }
+
+        // Hapus
+        let btnHapus = document.getElementById("btnHapus");
+        let ModalHapus = document.getElementById("ModalHapus");
+
+        let btnHapusConfrim = document.getElementById("btnHapusConfrim");
+        let btnHapusBatal = document.getElementById("btnHapusBatal");
+        let btnHapusOK = document.getElementById("btnHapusOK");
+        let ModalHapusConfirm = document.getElementById("ModalHapusConfirm");
+
+
+        // Start Hapus
+        btnHapus.onclick = function() {
+            ModalHapus.style.display = "block";
+        }
+        
+        btnHapusBatal.onclick = function() {
+            ModalHapus.style.display = "none";
+        }
+
+        btnHapusConfrim.onclick = function() {
+            ModalHapusConfirm.style.display = "block";
+            ModalHapus.style.display = "none";
+        }
+
+        btnHapusOK.onclick = function() {
+            ModalHapusConfirm.style.display = "none";
+        }
+        // End Hapus
+  
+    </script>
+    <script src="scripts/modalGroupEdit.js"></script>
+    
+</body>
+</html>

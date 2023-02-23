@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR Multi Toko</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/settingQr.css">
+    <link rel="stylesheet" href="styles/modalConfirmasi.css">
+</head>
+<body>
+     <!-- START CONTAINER -->
+     <div class="container">
+
+         <!-- start header -->
+         <div class="header">
+            <div class="title-header">
+                <p>Cloud Kitchen Kantin WGS</p>
+            </div>
+
+            <div class="search-header">
+                <button type="submit">
+                    <img src="assets/icon/search.svg" alt="">
+                </button>
+                <input type="text" placeholder="Cari toko disini..." name="search">
+            </div>
+        </div>
+        <!-- end header -->
+
+        <!-- start section -->
+        <div class="section">
+
+            <div class="scan">
+                <div class="title-scan">
+                    <p>Apakah toko anda terdapat di alamat yang berbeda.?</p>
+                </div>
+
+                <div class="select-option">
+                    <div class="option">
+                        <div class="options">
+                            <img src="assets/icon/single-alamat.svg" alt="">
+                            <div class="text-option">
+                                <p>Satu Alamat</p>
+                                <p>Dalam satu alamat toko</p>
+                            </div>
+                        </div>
+                        <input type="radio">
+                    </div>
+
+                    <div class="option">
+                        <div class="options">
+                            <img src="assets/icon/multiple-alamat.svg" alt="">
+                            <div class="text-option">
+                                <p>Multiple Alamat</p>
+                                <p>Alamat toko berbeda - beda</p>
+                            </div>
+                        </div>
+                        <input type="radio">
+                    </div>
+                </div>
+
+                <div class="qr">
+                    <img src="assets/icon/QR.svg" alt="">
+                </div>
+
+                <button>
+                    <img src="assets/icon/download.svg" alt="">
+                    Download QR Code
+                </button>
+            </div>
+
+
+            <div class="table">
+                <div class="title-table">
+                    <p>Data Toko</p>
+                    <p>Cloud Kitchen Kantin WGS</p>
+                </div>
+                <table>
+                    <tr>
+                        <th>Nama Toko</th>
+                        <th>Alamat</th>
+                        <th>No Telepon</th>
+                        <th>Aksi</th>
+                    </tr>
+                    <tr>
+                        <td>Cafe Djawa</td>
+                        <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                        <td>082234567890</td>
+                        <td>
+                            <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                            <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                            <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Kitchen Kanti WGS</td>
+                        <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                        <td>082234567890</td>
+                        <td>
+                            <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                            <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                            <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cafe Baru</td>
+                        <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                        <td>082234567890</td>
+                        <td>
+                            <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                            <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                            <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+            </div>
+        </div>
+        <!-- end section -->
+
+         <!-- start button  -->
+         <div class="section-button">
+            <div class="line-button"></div>
+            <div class="button-act">
+                <button onclick="kembali()">Kembali</button>
+                <button id="btnSimpan">Simpan</button>
+            </div>
+        </div>
+        <!-- End button  -->
+
+     </div>
+     <!-- END CONTAINER -->
+
+     <!-- Start Modal Berhasil Disimpan -->
+    <div id="myModalBerhasil" class="modal2">
+        
+        <!-- Start Modal content -->
+        <div class="modal-content2">
+            <!-- <div class="icon-confrm">
+                <img src="assets/icon/checklist.svg" alt="">
+            </div>
+
+            <div class="title-confrm">
+                <p>Simpan</p>
+                <p>Data Berhasil di simpan</p>
+            </div>
+
+            <div class="btn-modal-confrm">
+                <button id="btnConfrmOkSimpan">OK</button>
+            </div> -->
+        </div>
+    </div>
+    <!-- End Modal Berhasil Disimpan -->
+
+
+     <script>
+        // redirect
+        function kembali() {
+            window.location.href = '../qrMultiToko/index.html';
+        }
+     </script>
+     <script src="scripts/modals.js"></script>
+</body>
+</html>

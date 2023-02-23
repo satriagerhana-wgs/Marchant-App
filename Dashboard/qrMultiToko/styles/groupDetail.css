@@ -1,0 +1,368 @@
+@import url('https://fonts.cdnfonts.com/css/d-din');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'D-DIN Exp', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* start header */
+.header{
+    height: 70px;
+    background-color: #F1F1F1;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header .title-header{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.search-header{
+    width: 400px;
+    display: flex;
+}
+
+.search-header input{
+    height: 50px;
+    width: 350px;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+}
+
+.search-header button{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    background-color: #0075FF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-header button img{
+    width: 35px;
+    height: 35px;
+}
+/* end header */
+
+
+/* Start Menu */
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.nav-menu{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu a{
+    color: #A0A0A0;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.nav-menu a:nth-child(2){
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    /* border-bottom: 2px solid #000; */
+    color: #000;
+}
+
+.button button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px 0px #0000000F;
+    box-shadow: 0px 0px 4px 0px #0000000A;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+.button button:nth-child(1){
+    width: 150px;
+    height: 45px;
+    background-color: #0075FF;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.button button:nth-child(2){
+    width: 180px;
+    height: 45px;
+    background-color: #fff;
+    border: 1px solid #0075FF;
+    font-size: 14px;
+    color: #0075FF;
+    font-weight: bold;
+}
+
+.line-menu{
+    width: 93%;
+    border: 1px solid #BABABA;
+    margin-top: 10px;
+    margin: 10px auto;
+}
+/* End Menu */
+
+/* Start Group */
+.group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.group .group-name p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.group .group-edit button{
+    width: 150px;
+    height: 45px;
+    background-color: #E7EBEF;
+    font-size: 14px;
+    color: #636B78;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* End Group */
+
+
+/* start section */
+.section{
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 15px;
+}
+
+.scan{
+    width: 25%;
+    height: 440px;
+    border-radius: 20px;
+    padding: 20px 0;
+    background-color: #003778;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-scan{
+    width: 270px;
+    margin-bottom: 15px;
+    margin: auto;
+}
+
+.title-scan p:nth-child(1){
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.title-scan p:nth-child(2){
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.scan .qr{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.scan .qr img{
+    width: 75%;
+}
+
+.btn-download-qr{
+    width: 270px;
+    margin: auto;
+}
+
+.scan button{
+    width: 270px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #0075FF;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0px 2.5333333015441895px 2.5333333015441895px 0px #00000040;
+}
+
+.scan button img{
+    margin-right: 5px;
+}
+
+
+
+.table{
+    width: 73%;
+    height: 470px;
+}
+
+
+table{
+    width: 100%;
+    height: 300px;
+    border-collapse: collapse;
+    border: 1px solid #D1D4D6;
+}
+
+table th{
+    text-align: left;
+    background-color: #D1D4D6;
+}
+
+table th:nth-child(1){
+    border-top-left-radius: 10px;
+}
+
+table th:nth-child(4){
+    border-top-right-radius: 10px;
+}
+
+table td{
+    align-items: center;
+}
+
+table td:nth-child(1),
+table th:nth-child(1){
+    padding-left: 10px;
+}
+
+table td:nth-child(2),
+table th:nth-child(2){
+    width: 350px;
+    padding-left: 20px;
+}
+
+tr:nth-child(2n + 1) {
+    background-color: #F1F1F1;
+}
+
+tr td button{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+tr td button:nth-child(1){
+    background-color: #00B279;
+}
+tr td button:nth-child(2){
+    background-color: #FFC535;
+}
+tr td button:nth-child(3){
+    background-color: #FF2622;
+}
+
+
+.icon{
+    width: 20px;
+}
+
+.pagination {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+  
+.pagination a.active {
+    background-color: #0075FF;
+    color: white;
+    border: 1px solid #0075FF;
+}
+/* end section */
+
+
+/* start button */
+.section-button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 50px;
+}
+.line-button{
+    width: 100%;
+    border: 1px solid #D1D4D6;
+    margin-bottom: 20px;
+}
+
+.button-act{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+
+.button-act button{
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px 0px #0000000F;
+    box-shadow: 0px 0px 4px 0px #0000000A;
+    margin-bottom: 20px;
+
+}
+
+.button-act button:nth-child(1){
+    background-color: #FF2622;
+}
+/* end button */

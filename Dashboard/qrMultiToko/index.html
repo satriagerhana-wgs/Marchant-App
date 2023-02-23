@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR Multi Toko</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/modalConfirmasi.css">
+</head>
+<body>
+    <!-- START CONTAINER -->
+    <div class="container">
+        
+        <!-- start header -->
+        <div class="header">
+            <div class="title-header">
+                <p>Cloud Kitchen Kantin WGS</p>
+            </div>
+
+            <div class="search-header">
+                <button type="submit">
+                    <img src="assets/icon/search.svg" alt="">
+                </button>
+                <input type="text" placeholder="Cari toko disini..." name="search">
+            </div>
+        </div>
+        <!-- end header -->
+
+          <!-- Start Menu -->
+          <div class="menu">
+            <div class="nav-menu">
+                <a href="index.html">Daftar Toko</a>
+                <a href="group.html">Group</a>
+            </div>
+            <div class="button">
+                <button id="btnTambahToko">Tambah Toko</button>
+                <button onclick="settingQr()">Setting QR Multi Toko</button>
+            </div>
+        </div>
+        <div class="line-menu"></div>
+        <!-- End Menu -->
+
+        <!-- start table -->
+        <div class="section-table">
+            <table>
+                <tr>
+                    <th>Nama Toko</th>
+                    <th>Kode Toko</th>
+                    <th>Alamat</th>
+                    <th>No Telepon</th>
+                    <th>Aksi</th>
+                </tr>
+                <tr>
+                    <td>Cafe Djawa</td>
+                    <td>zXPloxLj</td>
+                    <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                    <td>082234567890</td>
+                    <td>
+                        <button id="btnTambahDetail"><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                        <button id="btnTambahEdit"><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                        <button id="btnDownload"><img class="icon" src="assets/icon/download.svg" alt=""></button>
+                        <button id="btnHapus"><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cloud Kitchen Kanti WGS</td>
+                    <td>zXPloxLj</td>
+                    <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                    <td>082234567890</td>
+                    <td>
+                        <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/download.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cafe Baru</td>
+                    <td>zXPloxLj</td>
+                    <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                    <td>082234567890</td>
+                    <td>
+                        <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/download.svg" alt=""></button>
+                        <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- end table -->
+
+
+    </div>
+    <!-- END CONTAINER -->
+    
+    <!-- Start Modal -->
+    <div id="myModal" class="modal">
+        
+        <!-- Start Modal content -->
+        <div class="modal-content">
+            <!-- start Header -->
+            <div class="header-modal">
+                <div class="title-header-modal">
+                    <p>Setting Alamat Toko</p> 
+                    <span class="close">&times;</span>
+                </div>
+                <div class="line-modal"></div>
+            </div>
+            <!-- end Header -->
+
+            <!-- Start form -->
+            <form action="">
+                <div class="input-toko">
+                    <label for="">Alamat Toko *</label>
+                    <input type="text" placeholder="Jalan Kopo Bihbul No 306, Margahayu Sel., Kec. Margahayu, Kabu...">
+                </div>
+                <div class="input-toko">
+                    <label for="">Nomor Telepon *</label>
+                    <input type="text" placeholder="082234567890">
+                </div>
+                <div class="input-toko">
+                    <label for="">Alamat Toko *</label>
+                    <input type="text" placeholder="https://www.google.co.id/maps/place/Kec.+Astanaanyar,+Kota......">
+                </div>
+                <div class="input-point">
+                    <div class="lat-long">
+                        <label for="">Latitude</label>
+                        <input type="text" placeholder="https://www.google.co.id/maps/place/Kec.+Astanaanyar,+Kota......" readonly>
+                    </div>
+                    <div class="lat-long">
+                        <label for="">Longtitude</label>
+                        <input type="text" placeholder="https://www.google.co.id/maps/place/Kec.+Astanaanyar,+Kota......" readonly>
+                    </div>
+                </div>
+            </form>
+            <!-- end form -->
+
+            <!-- start button -->
+            <div class="btn-modal">
+                <button id="btnSimpan">Simpan</button>
+                <button>Batal</button>
+            </div>
+            <!-- end button -->
+
+        </div>
+        <!-- End Modal content -->
+  
+    </div>
+    <!-- End Modal -->
+
+    
+    <!-- Start Modal Berhasil Disimpan -->
+    <div id="myModalBerhasil" class="modal2">
+        
+        <!-- Start Modal content -->
+        <div class="modal-content2">
+            <div class="icon-confrm">
+                <img src="assets/icon/checklist.svg" alt="">
+            </div>
+
+            <div class="title-confrm">
+                <p>Simpan</p>
+                <p>Data Berhasil di simpan</p>
+            </div>
+
+            <div class="btn-modal-confrm">
+                <button id="btnConfrmOkSimpan">OK</button>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Berhasil Disimpan -->
+
+    <!-- Start Modal Hapus -->
+    <div id="ModalHapus" class="modal2">
+    
+        <!-- Start Modal content -->
+        <div class="modal-content2">
+            <div class="icon-confrm">
+                <img src="assets/icon/check.svg" alt="">
+            </div>
+
+            <div class="title-confrm">
+                <p>Hapus Data</p>
+                <p>Apakah data ini akan di hapus.?</p>
+            </div>
+
+            <div class="btn-modal-confrm">
+                <button id="btnHapusConfrim">Ya</button>
+                <button id="btnHapusBatal">Batal</button>
+            </div>
+
+            
+        </div>
+        <!-- End Modal content -->
+    
+    </div>
+    <!-- End Modal Hapus-->
+
+    <!-- Start Modal Konfirmas Hapus-->
+    <div id="ModalHapusConfirm" class="modal2">
+        
+        <!-- Start Modal content -->
+        <div class="modal-content2">
+            <div class="icon-confrm">
+                <img src="assets/icon/checklist.svg" alt="">
+            </div>
+
+            <div class="title-confrm">
+                <p>Hapus</p>
+                <p>Data berhasil di hapus</p>
+            </div>
+
+            <div class="btn-modal-confrm">
+                <button id="btnHapusOK">OK</button>
+            </div>
+
+            
+        </div>
+        <!-- End Modal content -->
+
+    </div>
+    <!-- End Modal Konfirmas Hapus -->
+
+
+     <!-- Start Modal Notifikasi Download-->
+     <div id="ModalDownload" class="modal2">
+        
+        <!-- Start Modal content -->
+        <div class="modal-content2">
+            <div class="icon-confrm">
+                <img src="assets/icon/checklist.svg" alt="">
+            </div>
+
+            <div class="title-confrm">
+                <p>Download QR</p>
+                <p>QR Code Berhasil di Download</p>
+            </div>
+
+            <div class="btn-modal-confrm">
+                <button id="btnDownloadOK">OK</button>
+            </div>
+
+            
+        </div>
+        <!-- End Modal content -->
+
+    </div>
+    <!-- End Modal Notifikasi Download -->
+
+
+    <script>
+        console.log(nama)
+        // redirect
+          function settingQr() {
+            window.location.href = '../qrMultiToko/settingQr.html';
+        }
+    </script>
+    <script src="scripts/modals.js"></script>
+</body>
+</html>
