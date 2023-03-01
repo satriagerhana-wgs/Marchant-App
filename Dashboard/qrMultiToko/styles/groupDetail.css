@@ -12,30 +12,95 @@
     height: 100vh;
 }
 
-
-/* start header */
-.header{
-    height: 70px;
-    background-color: #F1F1F1;
-    padding: 0 50px;
+/* start headbar */
+.headbar{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 25px;
+}
+
+.menu-header{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header a{
+    text-decoration: none;
+}
+/* end headbar */
+
+
+/* Start Wrapper */
+.wrapper{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    background: #F5F6FA;
+}
+/* End Wrapper */
+
+
+/* start sidebar */
+.sidebar{
+    width: 7%;
+    background-color: #fff;
+    padding: 10px;
+}
+.menu-aside{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-aside .menu-icon{
+    text-decoration: none;
+}
+
+/* end sidebar */
+
+/* *********************************************************************************************** */
+
+/* start Content  */
+.container-content{
+    width: 90%;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* start header */
+.header{
+    height: 60px;
+    background-color: #F1F1F1;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    align-items: center; 
     margin-bottom: 20px;
 }
 
 .header .title-header{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .search-header{
-    width: 400px;
+    width: 300px;
     display: flex;
 }
 
 .search-header input{
-    height: 50px;
+    height: 40px;
     width: 350px;
     border-radius: 0 10px 10px 0;
     outline: none;
@@ -45,7 +110,7 @@
 
 .search-header button{
     width: 50px;
-    height: 50px;
+    height: 40px;
     border-radius: 10px 0 0 10px;
     background-color: #0075FF;
     outline: none;
@@ -54,80 +119,11 @@
 }
 
 .search-header button img{
-    width: 35px;
-    height: 35px;
+    width: 26px;
+    height: 26px;
 }
 /* end header */
 
-
-/* Start Menu */
-.menu{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-}
-.nav-menu{
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-menu a{
-    color: #A0A0A0;
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer;
-
-}
-
-.nav-menu a:nth-child(2){
-    color: #000;
-    font-weight: bold;
-}
-
-.nav-menu a:hover {
-    /* border-bottom: 2px solid #000; */
-    color: #000;
-}
-
-.button button{
-    border: none;
-    outline: none;
-    cursor: pointer;
-    box-shadow: 0px 4px 8px 0px #0000000F;
-    box-shadow: 0px 0px 4px 0px #0000000A;
-    border-radius: 50px;
-    margin-left: 10px;
-}
-
-.button button:nth-child(1){
-    width: 150px;
-    height: 45px;
-    background-color: #0075FF;
-    font-size: 14px;
-    color: #fff;
-    font-weight: bold;
-}
-
-.button button:nth-child(2){
-    width: 180px;
-    height: 45px;
-    background-color: #fff;
-    border: 1px solid #0075FF;
-    font-size: 14px;
-    color: #0075FF;
-    font-weight: bold;
-}
-
-.line-menu{
-    width: 93%;
-    border: 1px solid #BABABA;
-    margin-top: 10px;
-    margin: 10px auto;
-}
-/* End Menu */
 
 /* Start Group */
 .group{
@@ -145,23 +141,26 @@
 
 .group .group-edit button{
     width: 150px;
-    height: 45px;
-    background-color: #E7EBEF;
+    height: 40px;
+    background-color: #0075FF;
     font-size: 14px;
-    color: #636B78;
+    color: #fff;
     font-weight: bold;
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
     cursor: pointer;
 }
 
 /* End Group */
 
-
 /* start section */
 .section{
     width: 100%;
-    height: 440px;
+    height: 380px;
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
@@ -170,9 +169,9 @@
 
 .scan{
     width: 25%;
-    height: 440px;
+    height: 380px;
     border-radius: 20px;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: #003778;
     display: flex;
     flex-direction: column;
@@ -213,15 +212,15 @@
 }
 
 .scan button{
-    width: 270px;
-    height: 50px;
+    width: 80%;
+    height: 40px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
     background-color: #0075FF;
     font-size: 14px;
     font-weight: bold;
@@ -237,13 +236,13 @@
 
 .table{
     width: 73%;
-    height: 470px;
+    height: 370px;
 }
 
 
 table{
     width: 100%;
-    height: 300px;
+    height: 250px;
     border-collapse: collapse;
     border: 1px solid #D1D4D6;
 }
@@ -272,8 +271,13 @@ table th:nth-child(1){
 
 table td:nth-child(2),
 table th:nth-child(2){
-    width: 350px;
-    padding-left: 20px;
+    width: 300px;
+    padding: 0 20px;
+}
+
+table td:nth-child(3),
+table th:nth-child(3){
+    padding-right: 30px;
 }
 
 tr:nth-child(2n + 1) {
@@ -282,14 +286,16 @@ tr:nth-child(2n + 1) {
 
 tr td button{
     width: 30px;
-    height: 30px;
+    height: 3p0x;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     margin-left: 5px;
+    border: none;
+    background-color: transparent;
 }
 
-tr td button:nth-child(1){
+/* tr td button:nth-child(1){
     background-color: #00B279;
 }
 tr td button:nth-child(2){
@@ -297,11 +303,12 @@ tr td button:nth-child(2){
 }
 tr td button:nth-child(3){
     background-color: #FF2622;
-}
+} */
 
 
 .icon{
-    width: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .pagination {
@@ -313,11 +320,12 @@ tr td button:nth-child(3){
 .pagination a {
     color: black;
     float: left;
-    padding: 8px 16px;
+    padding: 5px 10px;
     text-decoration: none;
     transition: background-color .3s;
     border: 1px solid #ddd;
     margin: 0 4px;
+    font-size: 14px;
 }
   
 .pagination a.active {
@@ -366,3 +374,6 @@ tr td button:nth-child(3){
     background-color: #FF2622;
 }
 /* end button */
+/* End Content */
+
+

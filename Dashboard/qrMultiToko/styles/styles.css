@@ -10,32 +10,99 @@
 .container{
     width: 100%;
     height: 100vh;
+    background: #F5F6FA;
 }
 
-
-/* start header */
-.header{
-    height: 70px;
-    background-color: #F1F1F1;
-    padding: 0 50px;
+/* start headbar */
+.headbar{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 25px;
+}
+
+.menu-header{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header a{
+    text-decoration: none;
+}
+/* end headbar */
+
+
+
+/* Start Wrapper */
+.wrapper{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    background: #F5F6FA;
+}
+/* End Wrapper */
+
+
+/* start sidebar */
+.sidebar{
+    width: 7%;
+    background-color: #fff;
+    padding: 10px;
+}
+.menu-aside{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-aside .menu-icon{
+    text-decoration: none;
+}
+
+/* end sidebar */
+
+/* *********************************************************************************************** */
+
+/* start Content  */
+.container-content{
+    width: 90%;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* start header */
+.header{
+    height: 60px;
+    background-color: #F1F1F1;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    align-items: center; 
     margin-bottom: 20px;
 }
 
 .header .title-header{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .search-header{
-    width: 400px;
+    width: 300px;
     display: flex;
 }
 
 .search-header input{
-    height: 50px;
+    height: 40px;
     width: 350px;
     border-radius: 0 10px 10px 0;
     outline: none;
@@ -45,7 +112,7 @@
 
 .search-header button{
     width: 50px;
-    height: 50px;
+    height: 40px;
     border-radius: 10px 0 0 10px;
     background-color: #0075FF;
     outline: none;
@@ -54,8 +121,8 @@
 }
 
 .search-header button img{
-    width: 35px;
-    height: 35px;
+    width: 26px;
+    height: 26px;
 }
 /* end header */
 
@@ -66,7 +133,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 25px;
 }
 .nav-menu{
     width: 200px;
@@ -98,13 +165,13 @@
     cursor: pointer;
     box-shadow: 0px 4px 8px 0px #0000000F;
     box-shadow: 0px 0px 4px 0px #0000000A;
-    border-radius: 50px;
+    border-radius: 5px;
     margin-left: 10px;
 }
 
 .button button:nth-child(1){
     width: 150px;
-    height: 45px;
+    height: 40px;
     background-color: #0075FF;
     font-size: 14px;
     color: #fff;
@@ -113,7 +180,7 @@
 
 .button button:nth-child(2){
     width: 180px;
-    height: 45px;
+    height: 40px;
     background-color: #fff;
     border: 1px solid #0075FF;
     font-size: 14px;
@@ -122,17 +189,18 @@
 }
 
 .line-menu{
-    width: 93%;
-    border: 1px solid #BABABA;
-    margin-top: 10px;
-    margin: 10px auto 50px auto;
+    width: 96%;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    
 }
 /* End Menu */
+
 
 /* start table */
 .section-table{
     width: 100%;
-    padding: 0 50px;
+    padding: 0 25px;
 }
 
 table {
@@ -151,6 +219,7 @@ table tr th{
 table tr td{
     margin-top: 10px;
     padding: 15px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 table tr td:nth-child(1),
@@ -162,7 +231,11 @@ table tr td:nth-child(3),
 table tr th:nth-child(3),
 table tr td:nth-child(2),
 table tr th:nth-child(2){
-    padding-left: 50px;
+    padding-left: 30px;
+}
+
+table tr td:nth-child(3){
+    width: 300px;
 }
 
 table tr td:nth-child(4),
@@ -170,7 +243,7 @@ table tr th:nth-child(4){
     padding-right: 20px;
 }
 
-tr:nth-child(2n + 1) {
+tr:nth-child(2n - 1) {
     background-color: #F1F1F1;
 }
 
@@ -181,9 +254,11 @@ tr td button{
     border: none;
     cursor: pointer;
     margin-left: 5px;
+    border: none;
+    background-color: transparent;
 }
 
-tr td button:nth-child(1){
+/* tr td button:nth-child(1){
     background-color: #00B279;
 }
 tr td button:nth-child(2){
@@ -194,10 +269,37 @@ tr td button:nth-child(3){
 }
 tr td button:nth-child(4){
     background-color: #FF2622;
-}
+} */
 
 .icon{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 /* end table */
+
+/* Start Pagination */
+.pagination {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    font-size: 14px;
+}
+  
+.pagination a.active {
+    background-color: #0075FF;
+    color: white;
+    border: 1px solid #0075FF;
+}
+/* End Pagination */
+
+/* end Content  */

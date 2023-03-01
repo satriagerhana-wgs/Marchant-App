@@ -21,9 +21,9 @@ let btnTambahDetail = document.getElementById("btnTambahDetail");
 let btnTambahEdit = document.getElementById("btnTambahEdit");
 
 // Start Download
-let btnDownload = document.getElementById("btnDownload");
-let ModalDownload = document.getElementById("ModalDownload");
-let btnDownloadOK = document.getElementById("btnDownloadOK");
+// let btnDownload = document.getElementById("btnDownload");
+// let ModalDownload = document.getElementById("ModalDownload");
+// let btnDownloadOK = document.getElementById("btnDownloadOK");
 
 
 
@@ -43,13 +43,13 @@ btnTambahEdit.onclick = function() {
 }
 
 // Start Download
-btnDownload.onclick = function() {
-  ModalDownload.style.display = "block";
-}
+// btnDownload.onclick = function() {
+//   ModalDownload.style.display = "block";
+// }
 
-btnDownloadOK.onclick = function() {
-  ModalDownload.style.display = "none";
-}
+// btnDownloadOK.onclick = function() {
+//   ModalDownload.style.display = "none";
+// }
 // End Download
 
 // Start Simpan

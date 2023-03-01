@@ -11,125 +11,189 @@
 <body>
     <!-- START CONTAINER -->
     <div class="container">
+
+         <!-- Start headerbar -->
+         <div class="headbar">
+            <div class="logo">
+                    <img src="assets/icon/sandbox.svg" alt="">
+                </div>
+
+                <div class="menu-header">
+                    <a href="">Panduan Merchant</a>
+                    <a href="">Bantuan</a>
+                    <a href="">Merchant Fiqri</a>
+                    <a href=""><img src="assets/icon/side-menu/notifikasi.svg" alt=""></a>
+                    <a href=""><img src="assets/icon/side-menu/logout.svg" alt=""></a>
+                </div>
+            </div>
+            <!-- End headerbar -->
+
+
+
+        <!-- Start Wrapper -->
+        <div class="wrapper">
+
+             <!-- start Sidebar -->
+             <div class="sidebar">
+                <div class="menu-aside">
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-1.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-2-3.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-2-3.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-4.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-5.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-6.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-7.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-8-9.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-8-9.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-10.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-11.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- end Sidebar -->
+
+
+<!-- ********************************************************************************************************************************* -->
+
+            <!-- start Content -->
+            <div class="container-content">
+
+                <!-- start header -->
+                <div class="header">
+                    <div class="title-header">
+                        <p>Detail Group UMKM Bandung</p>
+                    </div>
+
+                    <div class="search-header">
+                        <button type="submit">
+                            <img src="assets/icon/search.svg" alt="">
+                        </button>
+                        <input type="text" placeholder="Cari toko disini..." name="search">
+                    </div>
+                </div>
+                <!-- end header -->
+
+                <div class="section">
+
+                    <div class="scan">
+                        <div class="title-scan">
+                            <p>QR Code</p>
+                            <p>UMKM Bandung</p>
+                        </div>
         
-        <!-- start header -->
-        <div class="header">
-            <div class="title-header">
-                <p>Cloud Kitchen Kantin WGS</p>
-            </div>
-
-            <div class="search-header">
-                <button type="submit">
-                    <img src="assets/icon/search.svg" alt="">
-                </button>
-                <input type="text" placeholder="Cari toko disini..." name="search">
-            </div>
-        </div>
-        <!-- end header -->
-
-          <!-- Start Menu -->
-          <div class="menu">
-            <div class="nav-menu">
-                <a href="index.html">Daftar Toko</a>
-                <a href="detail.html">Group</a>
-            </div>
-        </div>
-        <div class="line-menu"></div>
-        <!-- End Menu -->
-
-       
-        <div class="section">
-
-            <div class="scan">
-                <div class="title-scan">
-                    <p>QR Code</p>
-                    <p>UMKM Bandung</p>
-                </div>
-
-                <div class="qr">
-                    <img src="assets/icon/QR.svg" alt="">
-                </div>
-
-                <div class="btn-download-qr">
-                    <button>
-                        <img src="assets/icon/download.svg" alt="">
-                        Download QR Code
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="table">
-                <!-- Start Group -->
-                <div class="group">
-                    <div class="group-name">
-                        <p>UMKM Bandung</p>
+                        <div class="qr">
+                            <img src="assets/icon/QR.svg" alt="">
+                        </div>
+        
+                        <div class="btn-download-qr">
+                            <button>
+                                <img src="assets/icon/download.svg" alt="">
+                                Download QR Code
+                            </button>
+                        </div>
                     </div>
-                    <div class="group-edit">
-                        <button onclick="editGroup()">Edit Group</button>
+        
+        
+                    <div class="table">
+                        <!-- Start Group -->
+                        <div class="group">
+                            <div class="group-name">
+                                <p>UMKM Bandung</p>
+                            </div>
+                            <div class="group-edit">
+                                <button onclick="editGroup()">Edit Group</button>
+                            </div>
+                        </div>
+                        <!-- End Group -->
+                        <table>
+                            <tr>
+                                <th>Nama Toko</th>
+                                <th>Alamat</th>
+                                <th>No Telepon</th>
+                                <th>Aksi</th>
+                            </tr>
+                            <tr>
+                                <td>Cafe Djawa</td>
+                                <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                                <td>082234567890</td>
+                                <td>
+                                    <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                                    <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                                    <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cloud Kitchen Kanti WGS</td>
+                                <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                                <td>082234567890</td>
+                                <td>
+                                    <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                                    <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                                    <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cafe Baru</td>
+                                <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                                <td>082234567890</td>
+                                <td>
+                                    <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                                    <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                                    <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">&raquo;</a>
+                        </div>
                     </div>
                 </div>
-                <!-- End Group -->
-                <table>
-                    <tr>
-                        <th>Nama Toko</th>
-                        <th>Alamat</th>
-                        <th>No Telepon</th>
-                        <th>Aksi</th>
-                    </tr>
-                    <tr>
-                        <td>Cafe Djawa</td>
-                        <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
-                        <td>082234567890</td>
-                        <td>
-                            <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
-                            <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
-                            <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Cloud Kitchen Kanti WGS</td>
-                        <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
-                        <td>082234567890</td>
-                        <td>
-                            <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
-                            <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
-                            <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Cafe Baru</td>
-                        <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
-                        <td>082234567890</td>
-                        <td>
-                            <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
-                            <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
-                            <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
-                        </td>
-                    </tr>
-                </table>
-                <div class="pagination">
-                    <a href="#">&laquo;</a>
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">&raquo;</a>
-                  </div>
-            </div>
-        </div>
-        <!-- end section -->
+                <!-- end section -->
+                       
+                <!-- start button  -->
+                <div class="section-button">
+                    <div class="line-button"></div>
+                    <div class="button-act">
+                        <button onclick="kembali()">Kembali</button>
+                    </div>
+                </div>
+                <!-- End button  -->
 
-         <!-- start button  -->
-         <div class="section-button">
-            <div class="line-button"></div>
-            <div class="button-act">
-                <button onclick="kembali()">Kembali</button>
+                
+
             </div>
+            <!-- end Content -->
         </div>
-        <!-- End button  -->
+        <!-- End Wrapper -->
+
 
 
     </div>

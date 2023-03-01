@@ -13,90 +13,166 @@
 <body>
     <!-- START CONTAINER -->
     <div class="container">
+
+        <!-- Start headerbar -->
+        <div class="headbar">
+            <div class="logo">
+                <img src="assets/icon/sandbox.svg" alt="">
+            </div>
+
+            <div class="menu-header">
+                <a href="">Panduan Merchant</a>
+                <a href="">Bantuan</a>
+                <a href="">Merchant Fiqri</a>
+                <a href=""><img src="assets/icon/side-menu/notifikasi.svg" alt=""></a>
+                <a href=""><img src="assets/icon/side-menu/logout.svg" alt=""></a>
+            </div>
+        </div>
+        <!-- End headerbar -->
+
+        <!-- Start Wrapper -->
+        <div class="wrapper">
+
+            <!-- start Sidebar -->
+            <div class="sidebar">
+                <div class="menu-aside">
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-1.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-2-3.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-2-3.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-4.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-5.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-6.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-7.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-8-9.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-8-9.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-10.svg" alt=""></a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#" title="Lorem"><img src="assets/icon/side-menu/icon-11.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- end Sidebar -->
+
+<!-- ********************************************************************************************************************************* -->
+
+            <!-- start Content -->
+            <div class="container-content">
+
+                 <!-- start header -->
+                <div class="header">
+                    <div class="title-header">
+                        <p>Cloud Kitchen Kantin WGS</p>
+                    </div>
+
+                    <div class="search-header">
+                        <button type="submit">
+                            <img src="assets/icon/search.svg" alt="">
+                        </button>
+                        <input type="text" placeholder="Cari toko disini..." name="search">
+                    </div>
+                </div>
+                <!-- end header -->
+                
+                <!-- Start Menu -->
+                <div class="menu">
+                    <div class="nav-menu">
+                        <a href="index.html">Daftar Toko</a>
+                        <a href="group.html">Group</a>
+                    </div>
+                    <div class="button">
+                        <button id="btnTambahToko">Tambah Toko</button>
+                        <button onclick="settingQr()">Setting QR Multi Toko</button>
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+                <!-- End Menu -->
+
+
+                <!-- start table -->
+                <div class="section-table">
+                    <table>
+                        <tr>
+                            <th>Nama Toko</th>
+                            <th>Kode Toko</th>
+                            <th>Alamat</th>
+                            <th>No Telepon</th>
+                            <th>Aksi</th>
+                        </tr>
+                        <tr>
+                            <td>Cafe Djawa</td>
+                            <td>zXPloxLj</td>
+                            <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                            <td>082234567890</td>
+                            <td>
+                                <button id="btnTambahEdit" title="Edit"><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                                <button id="btnTambahDetail" title="Detail"><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                                <button id="btnHapus" title="Hapus"><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                                <!-- <button id="btnDownload" title="Download QR"><img class="icon" src="assets/icon/download.svg" alt=""></button> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Kitchen Kanti WGS</td>
+                            <td>zXPloxLj</td>
+                            <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                            <td>082234567890</td>
+                            <td>
+                                <button title="Edit"><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                                <button title="Detail"><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                                <button title="Hapus"><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                                <!-- <button title="Download QR"><img class="icon" src="assets/icon/download.svg" alt=""></button> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cafe Baru</td>
+                            <td>zXPloxLj</td>
+                            <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
+                            <td>082234567890</td>
+                            <td>
+                                <button title="Edit"><img class="icon" src="assets/icon/edit.svg" alt=""></button>
+                                <button title="Detail"><img class="icon" src="assets/icon/visible.svg" alt=""></button>
+                                <button title="Hapus"><img class="icon" src="assets/icon/delete.svg" alt=""></button>
+                                <!-- <button title="Download QR"><img class="icon" src="assets/icon/download.svg" alt=""></button> -->
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- end table -->
+
+
         
-        <!-- start header -->
-        <div class="header">
-            <div class="title-header">
-                <p>Cloud Kitchen Kantin WGS</p>
             </div>
+            <!-- start Content -->
 
-            <div class="search-header">
-                <button type="submit">
-                    <img src="assets/icon/search.svg" alt="">
-                </button>
-                <input type="text" placeholder="Cari toko disini..." name="search">
-            </div>
+
         </div>
-        <!-- end header -->
-
-          <!-- Start Menu -->
-          <div class="menu">
-            <div class="nav-menu">
-                <a href="index.html">Daftar Toko</a>
-                <a href="group.html">Group</a>
-            </div>
-            <div class="button">
-                <button id="btnTambahToko">Tambah Toko</button>
-                <button onclick="settingQr()">Setting QR Multi Toko</button>
-            </div>
-        </div>
-        <div class="line-menu"></div>
-        <!-- End Menu -->
-
-        <!-- start table -->
-        <div class="section-table">
-            <table>
-                <tr>
-                    <th>Nama Toko</th>
-                    <th>Kode Toko</th>
-                    <th>Alamat</th>
-                    <th>No Telepon</th>
-                    <th>Aksi</th>
-                </tr>
-                <tr>
-                    <td>Cafe Djawa</td>
-                    <td>zXPloxLj</td>
-                    <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
-                    <td>082234567890</td>
-                    <td>
-                        <button id="btnTambahDetail"><img class="icon" src="assets/icon/visible.svg" alt=""></button>
-                        <button id="btnTambahEdit"><img class="icon" src="assets/icon/edit.svg" alt=""></button>
-                        <button id="btnDownload"><img class="icon" src="assets/icon/download.svg" alt=""></button>
-                        <button id="btnHapus"><img class="icon" src="assets/icon/delete.svg" alt=""></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Cloud Kitchen Kanti WGS</td>
-                    <td>zXPloxLj</td>
-                    <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
-                    <td>082234567890</td>
-                    <td>
-                        <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
-                        <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
-                        <button><img class="icon" src="assets/icon/download.svg" alt=""></button>
-                        <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Cafe Baru</td>
-                    <td>zXPloxLj</td>
-                    <td>Jalan Astana Anyar No. 304, Pelindung Hewan. Kota Bandung</td>
-                    <td>082234567890</td>
-                    <td>
-                        <button><img class="icon" src="assets/icon/visible.svg" alt=""></button>
-                        <button><img class="icon" src="assets/icon/edit.svg" alt=""></button>
-                        <button><img class="icon" src="assets/icon/download.svg" alt=""></button>
-                        <button><img class="icon" src="assets/icon/delete.svg" alt=""></button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <!-- end table -->
-
+        <!-- End Wrapper -->
 
     </div>
     <!-- END CONTAINER -->
-    
+
+
+
+
     <!-- Start Modal -->
     <div id="myModal" class="modal">
         
@@ -251,7 +327,6 @@
     </div>
     <!-- End Modal Notifikasi Download -->
 
-
     <script>
         console.log(nama)
         // redirect
@@ -260,5 +335,6 @@
         }
     </script>
     <script src="scripts/modals.js"></script>
+ 
 </body>
 </html>
